@@ -9,10 +9,16 @@
 </head>
 
 <body>
-    <p id="l"></p>
+    <p id="result"></p>
     <script>
-        for (var x = 1; x < 101; x++) {
-            document.getElementById("l").innerHTML += x + "<br>";
+        for (var index = 1; index < 101; index++) {
+            if (index % 3 == 0) {
+                document.getElementById("result").innerHTML += "Fizz" + "<br>";
+            }
+            else{
+                document.getElementById("result").innerHTML += index + "<br>";
+            }
+            
         };
     </script>
 </body>
