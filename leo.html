@@ -15,12 +15,16 @@
             if (index % 15 == 0){
                 document.getElementById("result").innerHTML += "Fizz Buzz" + "<br>";
             }
+            else if (index % 7 == 0) {
+                document.getElementById("result").innerHTML += "Fuzz" + "<br>";
+            }
             else if (index % 3 == 0) {
                 document.getElementById("result").innerHTML += "Fizz" + "<br>";
             }
             else if(index % 5 == 0){
                 document.getElementById("result").innerHTML += "Buzz" + "<br>";
             }
+            
             else{
                 document.getElementById("result").innerHTML += index + "<br>";
             }
